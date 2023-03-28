@@ -27,6 +27,83 @@ header {
 }
 
 .logo {
-    width: 100px;
+    width: 300px;
     margin-left: -10px;
+}
+
+button img {
+    width: 30px;
+    margin-left: 10px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    margin-left: 25px;
+    display: flex;
+    list-style: none;
+}
+.menu ul a {
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    text-decoration: 0;
+    position: relative;
+}
+
+.menu ul a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f7A800;
+    transition: 0.1s ease-out;
+}
+
+.menu ul a:hover::after {
+    width: 100%;
+}
+
+.header-end {
+    display: flex;
+    align-items: center;
+}
+
+.header-end i {
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    text-decoration: 0;
+    position: relative;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    background-color: #BB2337;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: aliceblue;
+    text-transform: uppercase;
+    z-index: 1;
+    transition: 0.2s ease-out;
+}
+
+button span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+button:hover {
+    transform: scale();
 }
